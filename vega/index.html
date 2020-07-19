@@ -1,0 +1,229 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="keyframes.css">
+        <!-- <link rel="stylesheet" href="animations.css"> -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="static.css">
+        <link rel="stylesheet" href="themes.css">
+        <link rel="stylesheet" href="layouts.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <script src="../static.js"></script>
+        <script src="scripts.js"></script>
+
+        <!-- FAVICONS -->
+        <link rel="shortcut icon" href="../images/favicons/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="../images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="../images/favicons/safari-pinned-tab.svg" color="#ff6256">
+        <link rel="shortcut icon" href="../images/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ff6256">
+        <meta name="msapplication-config" content="../images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ff6256">
+
+        <!-- METADATA FOR EMBEDS AND PREVIEWS -->
+        <meta name="description" content="Official website of Infinity Labs.">
+        <meta name="keywords" content="Infinity Labs, YouTube">
+        <meta name="author" content="Infinity Labs">
+
+        <meta property="og:site_name" content="Infinity Labs">
+        <meta property="og:title" content="Vega — Infinity Labs">
+        <meta property="og:image" content="https://www.infinitylabs.dev/images/app_icon.png">
+        <meta property="og:url" content="https://www.infinitylabs.dev/vega/">
+
+        <title>Vega — Infinity Labs</title>
+    </head>
+
+    <body>
+        <header class="sidenav" id="sidenav" style="width: 0vw;">
+            <div class="sidenav_bg" id="sidenav_bg" onclick="open_nav()"></div>
+
+            <nav class="sidenav_container" id="sidenav_container_id" style="width: 0vw;">
+                <div class="sidenav_links">
+                    <a href="https://www.infinitylabs.dev/">Home</a>
+                    <a class="current" href="https://www.infinitylabs.dev/gallery/">Gallery</a>
+                    <a href="https://www.infinitylabs.dev/about/">About</a>
+                    <a href="https://www.infinitylabs.dev/portfolio/">Portfolio</a>
+                </div>
+            </nav>
+        </header>
+
+        <header class="nav_bar">
+            <div class="nav_bar_container">
+                <div class="center_header" id="center_header">
+                    <div>
+                        <a class="header_logo" href="https://www.infinitylabs.dev/">
+                            <figure class="logo"></figure>
+                        </a>
+                    </div>
+                </div>
+                <nav class="right_header">
+                    <ul class="header_links_container">
+                        <li><a href="https://www.infinitylabs.dev/">Home</a></li>
+                        <li><a href="https://www.infinitylabs.dev/" class="current">Keyboards</a></li>
+                        <li><a href="https://www.infinitylabs.dev/">Switches</a></li>
+                        <li><a href="https://www.infinitylabs.dev/">Keycaps</a></li>
+                        <li><a href="https://www.infinitylabs.dev/">Accessories</a></li>
+                    </ul>
+                </nav>
+                <img class="search_btn" src="images/search.png">
+    
+                <div class="hamburger" id="hamburger" onclick="open_nav()">
+                    <div class="bar1"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </header>
+
+        <main style="opacity: 1">
+            <div class="sidebar">
+                <div class="sidebar_container">
+                    <div class="filter_container sort">
+                        <h5>Sort By</h5>
+                        <h6>Relevant</h6>
+                        <h6>Trending</h6>
+                        <h6>New</h6>
+                        <h6>Best Selling</h6>
+                    </div>
+                    <div class="filter_container category">
+                        <h5>Category</h5>
+                        <h6>Keyboards</h6>
+                        <h6>Switches</h6>
+                        <h6>Keycaps</h6>
+                        <h6>Accessories</h6>
+                    </div>
+                    <div class="filter_container price">
+                        <h5>Price</h5>
+                        <div class="min_max_container">
+                            <input type="text" class="price_min" id="price_min" name="token_input" placeholder="min">
+                            <input type="text" class="price_max" id="price_max" name="token_input" placeholder="max">
+                        </div>
+                    </div>
+                    <div class="filter_container rating">
+                        <h5>Rating</h5>
+                        <div class="min_max_container">
+                            <img src="images/star.png" class="star active">
+                            <img src="images/star.png" class="star active">
+                            <img src="images/star.png" class="star active">
+                            <img src="images/star.png" class="star active">
+                            <img src="images/star.png" class="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="image_showcase">
+                <div class="collage">
+                    <div class="collage_wrapper">
+                        <div class="product_card">
+                            <img src="images/gallery/macpro.JPG" alt="Mac Pro" onclick="open_img('macpro')">
+                            <div class="product_name">
+                                <h5 class="brand">Apple</h5>
+                                <h5 class="model">Mac Pro</h5>
+                            </div>
+                            <h5>$5,999.00</h5>
+                        </div>
+                        <div class="product_card">
+                            <img src="images/gallery/alienwarem15.JPG" alt="Alienware M15" onclick="open_img('alienwarem15')">
+                            <div class="product_name">
+                                <h5 class="brand">Alienware</h5>
+                                <h5 class="model">M15 R2</h5>
+                            </div>
+                            <h5>$5,999.00</h5>
+                        </div>
+                        <div class="product_card">
+                            <img src="images/gallery/xps13.JPG" alt="XPS 13" onclick="open_img('xps13')">
+                            <div class="product_name">
+                                <h5 class="brand">Dell</h5>
+                                <h5 class="model">XPS 13</h5>
+                            </div>
+                            <h5>$5,999.00</h5>
+                        </div>
+                        <div class="product_card">
+                            <img src="images/gallery/macbookpro16.JPG" alt="16&quot; MacBook Pro" onclick="open_img('macbookpro16')">
+                            <div class="product_name">
+                                <h5 class="brand">Apple</h5>
+                                <h5 class="model">16" MacBook Pro</h5>
+                            </div>
+                            <h5>$5,999.00</h5>
+                        </div>
+                        <div class="product_card">
+                            <img src="images/gallery/razerblade13.JPG" alt="Razer Blade Stealth" onclick="open_img('razerblade13')">
+                            <div class="product_name">
+                                <h5 class="brand">Razer</h5>
+                                <h5 class="model">Blade Stealth</h5>
+                            </div>
+                            <h5>$5,999.00</h5>
+                        </div>
+                        <div class="product_card">
+                            <img src="images/gallery/surfacelaptop3.JPG" alt="Surface Laptop 3" onclick="open_img('surfacelaptop3')">
+                            <div class="product_name">
+                                <h5 class="brand">Microsoft</h5>
+                                <h5 class="model">Surface Laptop 3</h5>
+                            </div>
+                            <h5>$5,999.00</h5>
+                        </div>
+                        <div class="product_card">
+                            <img src="images/gallery/zenbookproduo.JPG" alt="Zenbook Pro Duo" onclick="open_img('zenbookproduo')">
+                            <div class="product_name">
+                                <h5 class="brand">ASUS</h5>
+                                <h5 class="model">ZenBook Pro Duo</h5>
+                            </div>
+                            <h5>$5,999.00</h5>
+                        </div>
+                        <div class="product_card">
+                            <img src="images/gallery/iphone11.JPG" alt="iPhone 11" onclick="open_img('iphone11')">
+                            <div class="product_name">
+                                <h5 class="brand">Apple</h5>
+                                <h5 class="model">iPhone 11</h5>
+                            </div>
+                            <h5>$5,999.00</h5>
+                        </div>
+                        <div class="product_card">
+                            <img src="images/gallery/ipad2019.JPG" alt="iPad" onclick="open_img('ipad2019')">
+                            <div class="product_name">
+                                <h5 class="brand">Apple</h5>
+                                <h5 class="model">iPad</h5>
+                            </div>
+                            <h5>$5,999.00</h5>
+                        </div>
+                        <div class="product_card">
+                            <img src="images/gallery/surfacepro6.JPG" alt="Surface Pro 6" onclick="open_img('surfacepro6')">
+                            <div class="product_name">
+                                <h5 class="brand">Microsoft</h5>
+                                <h5 class="model">Surface Pro 6</h5>
+                            </div>
+                            <h5>$5,999.00</h5>
+                        </div>
+                        <div class="product_card">
+                            <img src="images/gallery/iphone11pro.JPG" alt="iPhone 11 Pro" onclick="open_img('iphone11pro')">
+                            <div class="product_name">
+                                <h5 class="brand">Apple</h5>
+                                <h5 class="model">iPhone 11 Pro</h5>
+                            </div>
+                            <h5>$5,999.00</h5>
+                        </div>
+                        <div class="product_card">
+                            <img src="images/gallery/xps157590.JPG" alt="XPS 15 7590" onclick="open_img('xps157590')">
+                            <div class="product_name">
+                                <h5 class="brand">Dell</h5>
+                                <h5 class="model">XPS 15</h5>
+                            </div>
+                            <h5>$5,999.00</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </body>
+</html>
