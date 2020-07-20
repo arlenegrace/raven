@@ -123,16 +123,19 @@ main {
     margin-bottom: 25px;
     transition: filter 0.3s;
 }
+.image_showcase .product_name {
+    margin: 0 10px;
+}
 .image_showcase h5,
 .image_showcase h6 {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     letter-spacing: 0.04em;
     color: rgb(54, 54, 54);
     margin-bottom: 20px;
 }
 .image_showcase h6 {
-    font-size: 15px;
+    font-size: 14px;
 }
 .image_showcase .model,
 .image_showcase .brand {
