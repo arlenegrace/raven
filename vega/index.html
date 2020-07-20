@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="layouts.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-        <script src="../static.js"></script>
+        <script src="static.js"></script>
         <script src="scripts.js"></script>
 
         <!-- FAVICONS -->
@@ -85,7 +85,12 @@
         </header>
 
         <main style="opacity: 1">
-            <div class="sidebar">
+            <div class="mobile_toolbar">
+                <h5 class="sort_by" id="sort_by">Trending</h5>
+                <h5 class="filter_btn" id="filter_btn" onclick="open_filter()">Filters</h5>
+            </div>
+
+            <div class="sidebar" id="sidebar">
                 <div class="sidebar_container">
                     <div class="filter_container sort">
                         <h5>Sort By</h5>
@@ -121,7 +126,7 @@
                 </div>
             </div>
 
-            <section class="image_showcase">
+            <section class="image_showcase" id="gallery">
                 <div class="collage">
                     <div class="collage_wrapper">
                         <div class="product_card">

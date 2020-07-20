@@ -1,22 +1,46 @@
 @media only screen and (max-width: 1300px) {
-    .image_showcase .collage .collage_title {
-        padding-top: 90px;
-        padding-bottom: 60px;
+    .sidebar {
+        height: calc(100vh - 75px);
+        padding: 30px 35px;
+    }
+    .image_showcase {
+        max-height: calc(100vh - 75px);
+    }
+    .image_showcase .collage {
+        padding: 0 35px;
+    }
+    .image_showcase .collage .collage_wrapper {
+        grid-gap: 60px 15px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .image_showcase .collage .collage_title {
-        padding-top: 70px;
-        padding-bottom: 50px;
+    .sidebar {
+        padding: 30px 30px;
+    }
+    .image_showcase .collage {
+        padding: 0 20px;
     }
     .image_showcase .collage .collage_wrapper {
-        grid-template-columns: repeat( auto-fill, 1fr);
-        width: 90vw;
-        margin: 0 auto;
+        grid-gap: 60px 15px;
     }
-    .image_showcase .image_container img {
-        width: 90vw;
+}
+
+@media only screen and (max-width: 700px) {
+    main {
+        display: block;
+    }
+    .mobile_toolbar {
+        display: flex;
+    }
+    .sidebar {
+        display: none;
+    }
+    .image_showcase .collage {
+        padding: 0 15px;
+    }
+    .image_showcase .collage .collage_wrapper {
+        grid-gap: 60px 15px;
     }
 }
 

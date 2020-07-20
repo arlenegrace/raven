@@ -67,11 +67,6 @@ main {
 
 
 .nav_bar {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    padding-bottom: 30px;
-
     padding: 30px 30px;
 }
 .nav_bar_container {
@@ -255,6 +250,9 @@ main {
 }
 
 @media screen and (max-width: 1300px) {
+    .nav_bar {
+        padding: 25px 30px;
+    }
     .footer {
         padding: 20px 30px;
     }
@@ -309,7 +307,7 @@ main {
 }
 
 /* SHOW HAMBURGER MENU WHEN NAV BAR RUNS OUT OF SPACE (MOBILE SUB-650PX WIDTH) */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .sidenav_container button {
         font-size: 20px
     }
@@ -348,6 +346,9 @@ main {
         width: 45px;
         height: 25px;
         animation: none;
+    }
+    .search_btn {
+        display: none;
     }
 
     .footer {

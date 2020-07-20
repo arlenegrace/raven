@@ -8,6 +8,37 @@ main {
     display: flex;
 }
 
+.mobile_toolbar {
+    display: none;
+    width: 100%;
+    padding: 15px;
+}
+.mobile_toolbar h5 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    padding: 6px 0px;
+    color: rgb(240, 240, 240);
+}
+.mobile_toolbar .filter_btn {
+    margin-left: auto;
+    margin-right: 0;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: rgb(235, 235, 235);
+    background-color: rgb(29, 29, 29);
+    background-color: rgb(58, 58, 58);
+}
+.arrow {
+    border: solid;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
 
 .sidebar {
     height: calc(100vh - 85px);
@@ -78,7 +109,6 @@ main {
 }
 .image_showcase .collage_wrapper .product_card {
     width: 100%;
-    max-width: 90vw;
     height: 100%;
     padding-bottom: 10px;
     overflow: hidden;
@@ -88,7 +118,6 @@ main {
 }
 .image_showcase img {
     width: 100%;
-    max-width: 90vw;
     object-fit: cover;
     cursor: pointer;
     margin-bottom: 25px;
