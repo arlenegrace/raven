@@ -41,6 +41,7 @@
     }
     .image_showcase .collage .collage_wrapper {
         grid-gap: 60px 15px;
+        grid-template-columns: repeat( auto-fill, 100%);
     }
 }
 
