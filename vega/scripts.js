@@ -1,14 +1,3 @@
-function open_img(img) {
-    const fs = document.getElementById('fullscreen_container');
-    fs.style.display = "block";
-    document.getElementById('fullscreen_img').src=`../images/gallery/${img}.JPG`;
-}
-
-function close_img() {
-    const fs = document.getElementById('fullscreen_container');
-    fs.style.display = "none";
-}
-
 function open_filter() {
     const btn = document.getElementById('filter_btn');
     const sidebar = document.getElementById('sidebar');
@@ -25,6 +14,4 @@ function open_filter() {
         sidebar.style.display = "block";
         gallery.style.display = "none";
     }
-    
-    console.log('filter');
 }
