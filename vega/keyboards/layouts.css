@@ -1,44 +1,20 @@
-@media only screen and (max-width: 1300px) {
-    .image_showcase .collage {
-        padding: 0 35px;
-    }
-    .image_showcase .collage .collage_wrapper {
-        grid-gap: 60px 15px;
-    }
-}
-
 @media only screen and (max-width: 1000px) {
-    .image_showcase .collage {
+    main {
+        padding: 90px 0;
+    }
+    section {
         padding: 0 20px;
-    }
-    .image_showcase .collage .collage_wrapper {
-        grid-gap: 60px 15px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .image_showcase .collage {
-        padding: 0 15px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .mobile_toolbar {
-        display: flex;
+    main {
+        padding: 70px 0;
     }
-    .image_showcase .collage {
+    section {
         padding: 0 15px;
     }
     .image_showcase .collage .collage_wrapper {
-        grid-gap: 60px 15px;
         grid-template-columns: repeat( auto-fill, 100%);
-    }
-}
-
-@media only screen and (max-width: 600px) { /* PHONE LAYOUT*/
-    .image_showcase .collage .collage_title {
-        font-size: 36px;
-        padding-top: 50px;
-        padding-bottom: 30px;
     }
 }
