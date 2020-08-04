@@ -12,7 +12,7 @@
 
 /* animation: name duration timing_function delay direction iteration_count fill_mode play_state */
 
-.image_showcase .collage .collage_wrapper {
+.image_showcase {
     animation: blank 0.3s 0s, fade_in 0.8s 0.3s;
     animation-fill-mode: forwards;
 }

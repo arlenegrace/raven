@@ -73,7 +73,7 @@ main {
     margin: 0 auto;
 
     width: auto;
-    max-width: 1200px;
+    max-width: 1350px;
 
     display: flex;
     align-items: center;
@@ -89,7 +89,7 @@ main {
 .right_header {
     margin: 0 auto;
     width: 100%;
-    max-width: 920px;
+    max-width: 1050px;
     padding: 0 10%;
 }
 .right_header a {
@@ -98,21 +98,6 @@ main {
     letter-spacing: .06em;
     text-decoration: none;
     transition-duration: 0.3s;
-}
-.nav_bar .header_link_1 {
-    animation: fade_in 0.5s;
-}
-.nav_bar .header_link_2 {
-    animation: blank 0.1s 0s, fade_in 0.5s 0.1s;
-    animation-fill-mode: forwards;
-}
-.nav_bar .header_link_3 {
-    animation: blank 0.2s 0s, fade_in 0.5s 0.2s;
-    animation-fill-mode: forwards;
-}
-.nav_bar .header_link_4 {
-    animation: blank 0.3s 0s, fade_in 0.5s 0.3s;
-    animation-fill-mode: forwards;
 }
 .center_header {
     z-index: 1;
@@ -124,8 +109,6 @@ main {
     width: 45px;
     height: 25px;
     vertical-align: middle;
-
-    animation: fade_in 0.7s;
 }
 .search_btn {
     width: 20px;
@@ -144,9 +127,6 @@ main {
     height: 3px;
     margin: 8px 0;
     transition: 0.4s;
-
-    animation-name: blank_width 0.1s 0s, hamburger_in 0.5s 0.1s;
-    animation-fill-mode: forwards;
 }
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-5px, 4px);

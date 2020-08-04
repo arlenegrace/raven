@@ -1,11 +1,4 @@
 @media only screen and (max-width: 1300px) {
-    .sidebar {
-        height: calc(100vh - 75px);
-        padding: 30px 35px;
-    }
-    .image_showcase {
-        max-height: calc(100vh - 75px);
-    }
     .image_showcase .collage {
         padding: 0 35px;
     }
@@ -15,9 +8,6 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .sidebar {
-        padding: 30px 30px;
-    }
     .image_showcase .collage {
         padding: 0 20px;
     }
@@ -27,30 +17,14 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .sidebar {
-        height: calc(100vh - 70px);
-    }
-    .image_showcase {
-        max-height: calc(100vh - 70px);
-    }
     .image_showcase .collage {
         padding: 0 15px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    main {
-        display: block;
-    }
     .mobile_toolbar {
         display: flex;
-    }
-    .sidebar {
-        display: none;
-        height: calc(100vh - 70px - 58px);
-    }
-    .image_showcase {
-        max-height: calc(100vh - 70px - 58px);
     }
     .image_showcase .collage {
         padding: 0 15px;
