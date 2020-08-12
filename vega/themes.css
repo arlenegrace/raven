@@ -8,29 +8,70 @@
  */
 
 body {
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(29, 29, 29);
 }
-
-
-.sidebar {
-    background-color: rgb(44, 44, 44);
-}
-
 
 main {
-    background-color: rgb(245, 245, 245);
     background-color: rgb(255, 255, 255);
 }
 
 
-.fullscreen_container {
-    background-color: rgba(12, 12, 12, 0.9);
+.landing_container .landing_text_container h1 {
+    color: rgb(255, 255, 255);
+}
+.landing_container .landing_text_container p {
+    color: rgb(255, 255, 255);
+}
+.landing_container .landing_text_container a {
+    color: rgb(51, 51, 51);
+    background-color: rgb(245, 245, 245);
+}
+.landing_container .landing_text_container a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(34, 46, 70, 0.9);
 }
 
-.image_showcase .collage .collage_title {
-    color: #ffeccf;
+
+.latest .title_container h2,
+.featured .title_container h2 {
+    color: rgb(51, 51, 51);
 }
-.image_showcase .collage .row .image_right,
-.image_showcase .row .bottom .image_left {
-    background-color: rgb(37, 37, 37);
+.carousel_card {
+    background: rgb(245, 245, 245);
+}
+
+
+.carousel_card .card_title a {
+    color: rgb(51, 51, 51);
+    background-color: rgba(245, 245, 245, 0.9);
+}
+.carousel_card .card_title a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(34, 46, 70, 0.9);
+}
+
+
+.browse .carousel_card {
+    background: rgb(245, 245, 245);
+}
+
+
+.luxury_container .title_container h1 {
+    color: rgb(255, 255, 255);
+}
+.luxury_container .title_container p {
+    color: rgb(245, 245, 245);
+}
+.luxury_container .title_container a {
+    color: rgb(51, 51, 51);
+    background-color: rgb(245, 245, 245);
+}
+.luxury_container .title_container a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(34, 46, 70, 0.9);
+}
+
+
+.follow .title_container h2 {
+    color: rgb(51, 51, 51);
 }

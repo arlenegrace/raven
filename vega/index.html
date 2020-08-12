@@ -6,17 +6,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="../reset.css">
-        <link rel="stylesheet" href="../keyframes.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="keyframes.css">
         <link rel="stylesheet" href="animations.css">
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="../static.css">
+        <link rel="stylesheet" href="static.css">
         <link rel="stylesheet" href="themes.css">
         <link rel="stylesheet" href="layouts.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-        <script src="../static.js"></script>
+        <script src="static.js"></script>
         <script src="scripts.js"></script>
+
+        <!-- FLICKITY FOR CAROUSEL -->
+        <link rel="stylesheet" href="deps/flickity/flickity.css" media="screen">
+        <script src="deps/flickity/flickity.pkgd.min.js"></script>
 
         <!-- FAVICONS -->
         <link rel="shortcut icon" href="../images/favicons/favicon.ico">
@@ -69,17 +73,18 @@
                         </a>
                     </div>
                 </div>
+
                 <nav class="right_header">
                     <ul class="header_links_container">
-                        <li><a href="https://www.infinitylabs.dev/">Home</a></li>
-                        <li><a href="https://www.infinitylabs.dev/" class="current">Keyboards</a></li>
+                        <li><a href="https://www.infinitylabs.dev/" class="current">Home</a></li>
+                        <li><a href="https://www.infinitylabs.dev/">Keyboards</a></li>
                         <li><a href="https://www.infinitylabs.dev/">Switches</a></li>
                         <li><a href="https://www.infinitylabs.dev/">Keycaps</a></li>
                         <li><a href="https://www.infinitylabs.dev/">Accessories</a></li>
                     </ul>
                 </nav>
-                <img class="search_btn" src="../images/search.png">
-    
+                <img class="search_btn" src="images/search.png">
+
                 <div class="hamburger" id="hamburger" onclick="open_nav()">
                     <div class="bar1"></div>
                     <div class="bar3"></div>
@@ -88,120 +93,271 @@
         </header>
 
         <main style="opacity: 1">
-            <div class="mobile_toolbar">
-                <h5 class="sort_by" id="sort_by">Trending</h5>
-                <h5 class="filter_btn" id="filter_btn" onclick="open_filter()">Filters</h5>
-            </div>
+            <section class="landing">
+                <div class="landing_container">
+                    <div class="landing_text_container">
+                        <h1>THE SEARCH FOR<br> THE PERFECT KEYBOARD</h1>
+                        <p>
+                            Explore the countless different keyboard layouts, switches, keycaps
+                            and more. From aluminum cases to frosted polycarbonate for a beautiful LED glow,
+                            there exists a keyboard perfectly suited to your personal preferences and workflow.
+                        </p>
+                        <a href="keyboards/index.html">Shop</a>
+                    </div>
+                </div>
+            </section>
 
-            <section class="image_showcase" id="gallery">
-                <ul class="filter_container">
-                    <li onclick="pick_filter(this)" class="filter">Relevant</li>
-                    <li onclick="pick_filter(this)" class="filter active_filter">Trending</li>
-                    <li onclick="pick_filter(this)" class="filter">Newest</li>
-                </ul>
+            <section class="featured">
+                <div class="featured_container">
+                    <div class="title_container">
+                        <h2>Featured Products</h2>
+                    </div>
 
-                <div class="collage">
-                    <div class="collage_wrapper">
-                        <div class="product_card">
-                            <img src="../images/gallery/macpro.JPG" alt="Mac Pro" onclick="open_img('macpro')">
-                            <div class="product_name">
-                                <h5 class="brand">Apple</h5>
-                                <h5 class="model">Mac Pro</h5>
+                    <div class="gallery js-flickity"
+                    data-flickity-options='{ "wrapAround": true, "pageDots": false }'>
+
+                        <div class="carousel_card">
+                            <a class="card_image" href="keyboards/index.html">
+                                <img src="images/car_3.jpg" alt="Keyboard">
+                            </a>
+                            <div class="card_title">
+                                <a href="keyboards/index.html">Keycult No. 1</a>
                             </div>
-                            <h6>$5,999.00</h6>
                         </div>
-                        <div class="product_card">
-                            <img src="../images/gallery/alienwarem15.JPG" alt="Alienware M15" onclick="open_img('alienwarem15')">
-                            <div class="product_name">
-                                <h5 class="brand">Alienware</h5>
-                                <h5 class="model">M15 R2</h5>
+                        <div class="carousel_card">
+                            <a class="card_image" href="keyboards/index.html">
+                                <img src="images/car_1.jpg" alt="Keyboard">
+                            </a>
+                            <div class="card_title">
+                                <a href="keyboards/index.html">Keycult No. 1</a>
                             </div>
-                            <h6>$5,999.00</h6>
                         </div>
-                        <div class="product_card">
-                            <img src="../images/gallery/xps13.JPG" alt="XPS 13" onclick="open_img('xps13')">
-                            <div class="product_name">
-                                <h5 class="brand">Dell</h5>
-                                <h5 class="model">XPS 13</h5>
+                        <div class="carousel_card">
+                            <a class="card_image" href="keyboards/index.html">
+                                <img src="images/car_2.jpg" alt="Keyboard">
+                            </a>
+                            <div class="card_title">
+                                <a href="keyboards/index.html">Keycult No. 1</a>
                             </div>
-                            <h6>$5,999.00</h6>
                         </div>
-                        <div class="product_card">
-                            <img src="../images/gallery/macbookpro16.JPG" alt="16&quot; MacBook Pro" onclick="open_img('macbookpro16')">
-                            <div class="product_name">
-                                <h5 class="brand">Apple</h5>
-                                <h5 class="model">16" MacBook Pro</h5>
+                        <div class="carousel_card">
+                            <a class="card_image" href="keyboards/index.html">
+                                <img src="images/car_4.jpg" alt="Keyboard">
+                            </a>
+                            <div class="card_title">
+                                <a href="keyboards/index.html">Keycult No. 1/65</a>
                             </div>
-                            <h6>$5,999.00</h6>
                         </div>
-                        <div class="product_card">
-                            <img src="../images/gallery/razerblade13.JPG" alt="Razer Blade Stealth" onclick="open_img('razerblade13')">
-                            <div class="product_name">
-                                <h5 class="brand">Razer</h5>
-                                <h5 class="model">Blade Stealth</h5>
+                        <div class="carousel_card">
+                            <a class="card_image" href="keyboards/index.html">
+                                <img src="images/car_5.jpg" alt="Keyboard">
+                            </a>
+                            <div class="card_title">
+                                <a href="keyboards/index.html">Keycult No. 1/65</a>
                             </div>
-                            <h6>$5,999.00</h6>
                         </div>
-                        <div class="product_card">
-                            <img src="../images/gallery/surfacelaptop3.JPG" alt="Surface Laptop 3" onclick="open_img('surfacelaptop3')">
-                            <div class="product_name">
-                                <h5 class="brand">Microsoft</h5>
-                                <h5 class="model">Surface Laptop 3</h5>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="browse">
+                <div class="featured_container">
+                    <div class="gallery js-flickity" 
+                    data-flickity-options='{ "wrapAround": true, "pageDots": false }'>
+
+                        <div class="carousel_card">
+                            <a class="card_image" href="keyboards/index.html">
+                                <img src="images/car_3.jpg" alt="Keyboard">
+                            </a>
+                            <div class="card_title">
+                                <a href="keyboards/index.html">Keyboards</a>
                             </div>
-                            <h6>$5,999.00</h6>
                         </div>
-                        <div class="product_card">
-                            <img src="../images/gallery/zenbookproduo.JPG" alt="Zenbook Pro Duo" onclick="open_img('zenbookproduo')">
-                            <div class="product_name">
-                                <h5 class="brand">ASUS</h5>
-                                <h5 class="model">ZenBook Pro Duo</h5>
+                        <div class="carousel_card">
+                            <a class="card_image" href="keyboards/index.html">
+                                <img src="images/car_8.jpg" alt="Keyboard">
+                            </a>
+                            <div class="card_title">
+                                <a href="keyboards/index.html">Keycaps</a>
                             </div>
-                            <h6>$5,999.00</h6>
                         </div>
-                        <div class="product_card">
-                            <img src="../images/gallery/iphone11.JPG" alt="iPhone 11" onclick="open_img('iphone11')">
-                            <div class="product_name">
-                                <h5 class="brand">Apple</h5>
-                                <h5 class="model">iPhone 11</h5>
+                        <div class="carousel_card">
+                            <a class="card_image" href="keyboards/index.html">
+                                <img src="images/car_7.jpg" alt="Keyboard">
+                            </a>
+                            <div class="card_title">
+                                <a href="keyboards/index.html">Switches</a>
                             </div>
-                            <h6>$5,999.00</h6>
                         </div>
-                        <div class="product_card">
-                            <img src="../images/gallery/ipad2019.JPG" alt="iPad" onclick="open_img('ipad2019')">
-                            <div class="product_name">
-                                <h5 class="brand">Apple</h5>
-                                <h5 class="model">iPad</h5>
+                        <div class="carousel_card">
+                            <a class="card_image" href="keyboards/index.html">
+                                <img src="images/car_10.jpg" alt="Keyboard">
+                            </a>
+                            <div class="card_title">
+                                <a href="keyboards/index.html">Stabilizers</a>
                             </div>
-                            <h6>$5,999.00</h6>
                         </div>
-                        <div class="product_card">
-                            <img src="../images/gallery/surfacepro6.JPG" alt="Surface Pro 6" onclick="open_img('surfacepro6')">
-                            <div class="product_name">
-                                <h5 class="brand">Microsoft</h5>
-                                <h5 class="model">Surface Pro 6</h5>
+                        <div class="carousel_card">
+                            <a class="card_image" href="keyboards/index.html">
+                                <img src="images/car_9.jpg" alt="Keyboard">
+                            </a>
+                            <div class="card_title">
+                                <a href="keyboards/index.html">Accessories</a>
                             </div>
-                            <h6>$5,999.00</h6>
                         </div>
-                        <div class="product_card">
-                            <img src="../images/gallery/iphone11pro.JPG" alt="iPhone 11 Pro" onclick="open_img('iphone11pro')">
-                            <div class="product_name">
-                                <h5 class="brand">Apple</h5>
-                                <h5 class="model">iPhone 11 Pro</h5>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="latest">
+                <div class="latest_container">
+                    <div class="title_container">
+                        <h2>Latest Products</h2>
+                    </div>
+
+                    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "pageDots": false }'>
+                        <div class="carousel_card">
+                            <a class="card_image" href="keyboards/index.html">
+                                <img src="images/car_2.jpg" alt="Keyboard">
+                            </a>
+                            <div class="card_title">
+                                <a href="keyboards/index.html">Keycult No. 1</a>
                             </div>
-                            <h6>$5,999.00</h6>
                         </div>
-                        <div class="product_card">
-                            <img src="../images/gallery/xps157590.JPG" alt="XPS 15 7590" onclick="open_img('xps157590')">
-                            <div class="product_name">
-                                <h5 class="brand">Dell</h5>
-                                <h5 class="model">XPS 15</h5>
+                        <div class="carousel_card">
+                            <a class="card_image" href="keyboards/index.html">
+                                <img src="images/car_5.jpg" alt="Keyboard">
+                            </a>
+                            <div class="card_title">
+                                <a href="keyboards/index.html">Keycult No. 1/65</a>
                             </div>
-                            <h6>$5,999.00</h6>
                         </div>
+                        <div class="carousel_card">
+                            <a class="card_image" href="keyboards/index.html">
+                                <img src="images/car_3.jpg" alt="Keyboard">
+                            </a>
+                            <div class="card_title">
+                                <a href="keyboards/index.html">Keycult No. 1</a>
+                            </div>
+                        </div>
+                        <div class="carousel_card">
+                            <a class="card_image" href="keyboards/index.html">
+                                <img src="images/car_1.jpg" alt="Keyboard">
+                            </a>
+                            <div class="card_title">
+                                <a href="keyboards/index.html">Keycult No. 1</a>
+                            </div>
+                        </div>
+                        <div class="carousel_card">
+                            <a class="card_image" href="keyboards/index.html">
+                                <img src="images/car_4.jpg" alt="Keyboard">
+                            </a>
+                            <div class="card_title">
+                                <a href="keyboards/index.html">Keycult No. 1/65</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="luxury">
+                <div class="luxury_container">
+                    <div class="title_container">
+                        <h1>High End Luxury Keyboards</h1>
+                        <p>
+                            Made from anodized aluminum with a sandblasted brass mid-layer, complete with
+                            gasket mounting for maximum acoustics and typing feel.
+                        </p>
+                        <a href="keyboards/index.html">Shop</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="follow">
+                <div class="gallery_container">
+                    <div class="title_container">
+                        <h2>Follow us on Instagram</h2>
+                    </div>
+
+                    <div class="gallery_feed">
+                        <a class="card_image" href="https://infinitylabs.dev/projects/vega/">
+                            <img src="images/car_1.jpg" alt="Keyboard">
+                        </a>
+                        <a class="card_image" href="https://infinitylabs.dev/projects/vega/">
+                            <img src="images/car_2.jpg" alt="Keyboard">
+                        </a>
+                        <a class="card_image" href="https://infinitylabs.dev/projects/vega/">
+                            <img src="images/car_3.jpg" alt="Keyboard">
+                        </a>
+                        <a class="card_image" href="https://infinitylabs.dev/projects/vega/">
+                            <img src="images/car_4.jpg" alt="Keyboard">
+                        </a>
+                        <a class="card_image" href="https://infinitylabs.dev/projects/vega/">
+                            <img src="images/car_5.jpg" alt="Keyboard">
+                        </a>
+                        <a class="card_image" href="https://infinitylabs.dev/projects/vega/">
+                            <img src="images/car_7.jpg" alt="Keyboard">
+                        </a>
+
                     </div>
                 </div>
             </section>
         </main>
 
+        <footer>
+            <div class="footer_container">
+
+                <div class="footer_links_container">
+                    <div class="list categories">
+                        <h5>Browse</h5>
+                        <a href="https://infinitylabs.dev/projects/vega/">Keyboards</a>
+                        <a href="https://infinitylabs.dev/projects/vega/">Switches</a>
+                        <a href="https://infinitylabs.dev/projects/vega/">Keycaps</a>
+                        <a href="https://infinitylabs.dev/projects/vega/">Accessories</a>
+                    </div>
+
+                    <div class="list information">
+                        <h5>Information</h5>
+                        <a href="https://infinitylabs.dev/projects/vega/">About us</a>
+                        <a href="https://infinitylabs.dev/projects/vega/">Privacy policy</a>
+                        <a href="https://infinitylabs.dev/projects/vega/">Terms and conditions</a>
+                        <a href="https://infinitylabs.dev/projects/vega/">My account</a>
+                    </div>
+
+                    <div class="list service">
+                        <h5>Customer Service</h5>
+                        <a href="https://infinitylabs.dev/projects/vega/">FAQ</a>
+                        <a href="https://infinitylabs.dev/projects/vega/">Contact us</a>
+                        <a href="https://infinitylabs.dev/projects/vega/">Orders and returns</a>
+                        <a href="https://infinitylabs.dev/projects/vega/">Support center</a>
+                    </div>
+
+                    <div class="list subscribe">
+                        <h5>Follow Us</h5>
+
+                        <form class="login_form" action="javascript:emailSubscribe()">
+                            <input type="text" class="token_input" id="token_input" name="token_input" placeholder="Your email">
+                            <input type="submit" class="login_button" id="login_button" name="Submit" value="Submit"/>
+                        </form>
+
+                        <div class="social_container">
+                            <a class="youtube" href="https://infinitylabs.dev/projects/vega/"></a>
+                            <a class="instagram" href="https://infinitylabs.dev/projects/vega/"></a>
+                            <a class="twitter" href="https://infinitylabs.dev/projects/vega/"></a>
+                            <a class="github" href="https://www.github.com/arlenegrace/vega"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="copyright">
+                    <p>Copyright Infinity Labs 2020. All rights reserved.</p>
+                </div>
+
+            </div>
+        </footer>
     </body>
 </html>

@@ -138,71 +138,93 @@ main {
 }
 
 
-.footer {
-    padding: 30px 30px;
+footer {
+    padding: 70px 30px;
+    background-color: rgb(241, 241, 241);
 }
-.footer .footer_container {
-    width: auto;
-    max-width: 1200px;
+.footer_container {
+    max-width: 1350px;
     margin: 0 auto;
+}
+.footer_links_container {
     display: flex;
-    padding: 30px 0px;
+    justify-content: space-between;
 }
-.footer .logo_wrapper {
-    width: 33%;
-    margin-right: auto;
-    display: flex;
+.footer_links_container .list {
+    width: 19%;
 }
-.footer .logo_wrapper figure {
-    background-image: url("images/logo_white.png");
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 29px;
-    height: 16px;
-    margin: auto 0;
-    margin-right: 5px;
+.footer_container .subscribe {
+    margin-left: auto;
 }
-.footer .logo_wrapper h1 {
-    font-weight: 700;
+.footer_links_container .list h5 {
     font-size: 16px;
+    font-weight: 500;
     letter-spacing: 0.06em;
-    margin: auto 0;
+    margin-bottom: 20px;
+    color: rgb(80, 80, 80);
 }
-.social {
-    width: 33%;
-    margin: 0 auto;
-}
-.social .social_container {
-    width: auto;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-.copyright {
-    width: 33%;
-    margin-left: auto;
-    display: flex;
-}
-.copyright h1 {
-    font-weight: 600;
+.footer_links_container .list a {
+    display: block;
+
     font-size: 14px;
-    text-align: right;
-    letter-spacing: 0.04em;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: rgb(100, 100, 100);
+    transition: color 0.3s;
+}
+.footer_links_container .list a:hover {
+    color: rgb(58, 58, 58);
 }
 
+.login_form {
+    width: 250px;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.login_form .token_input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin: 0;
+    padding: 8px 12px;
+    color: #ffffff;
+    background-color: rgb(151, 151, 151);
+}
+.login_form .token_input::placeholder {
+    color: rgb(199, 199, 199);
+}
+.login_form .login_button {
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #ffffff;
+    background-color: rgb(36, 36, 36);
+    transition: background-color 0.3s;
+    padding: 8px 12px;
+    margin: 0px;
+}
+.login_form .login_button:hover {
+    background-color: rgb(58, 58, 58);
+}
+.social_container {
+    width: auto;
+    display: flex;
+}
 .youtube,
 .instagram,
 .twitter,
 .discord,
 .github {
-    margin-left: 7px;
-    margin-right: 7px;
-    width: 30px;
-    height: 30px;
+    margin-right: 14px;
+    width: 25px;
+    height: 25px;
     background-size: cover;
     background-repeat: no-repeat;
     display: inline-block;
@@ -215,19 +237,36 @@ main {
 .github:hover {
     filter: brightness(0.8);
 }
+.youtube {
+    background-image: url("images/footer/youtube_light.png");
+}
+.instagram {
+    background-image: url("images/footer/instagram_light.png");
+}
+.twitter {
+    background-image: url("images/footer/twitter_light.png");
+}
+.discord {
+    background-image: url("images/footer/discord_light.png");
+}
+.github {
+    background-image: url("images/footer/github_light.png");
+}
+.footer_container .separator {
+    width: 100%;
+    height: 2px;
+    margin: 30px 0;
+    background-color: rgb(224, 224, 224);
+}
+.footer_container .copyright p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: rgb(80, 80, 80);
+}
 
 
 /* LAYOUTS CSS */
-
-/* SHRINK DROPDOWN MENU TEXT FOR SHORT SCREENS (SUB 450PX HEIGHT) */
-@media screen and (max-height: 450px) {
-    .sidenav_container {
-        overflow-y: auto;
-    }
-    .sidenav_container a {
-        font-size: 20px
-    }
-}
 
 @media screen and (max-width: 1300px) {
     .nav_bar {
@@ -245,44 +284,6 @@ main {
 @media screen and (min-width: 940px) {
     .sidenav_container {
         height: 0%;
-    }
-}
-
-
-/* COMPRESS FOOTER INTO VERTICAL STACK */
-@media screen and (max-width: 750px) {
-    .footer {
-        padding: 10px 30px;
-    }
-    .footer .footer_container {
-        display: block;
-    }
-    .footer .logo_wrapper,
-    .social,
-    .copyright {
-        width: auto;
-        margin: 0 auto;
-    }
-    .social {
-        padding: 15px 0px;
-    }
-    .footer .logo_wrapper figure {
-        margin-left: auto;
-    }
-    .footer .logo_wrapper h1 {
-        margin-right: auto;
-    }
-    .copyright h1 {
-        text-align: center;
-        margin: auto;
-    }
-    .youtube,
-    .instagram,
-    .twitter,
-    .discord,
-    .github {
-        margin-left: 15px;
-        margin-right: 15px;
     }
 }
 
@@ -337,32 +338,61 @@ main {
     }
 }
 
-/* SHRINK FOOTER FOR SMALLER PHONES */
-@media screen and (max-width: 400px) {
+/* COMPRESS FOOTER INTO VERTICAL STACK */
+@media screen and (max-width: 750px) {
+    .footer {
+        padding: 10px 30px;
+    }
+    .footer .footer_container {
+        display: block;
+    }
+    .footer .logo_wrapper,
+    .social,
+    .copyright {
+        width: auto;
+        margin: 0 auto;
+    }
+    .social {
+        padding: 15px 0px;
+    }
+    .footer .logo_wrapper figure {
+        margin-left: auto;
+    }
+    .footer .logo_wrapper h1 {
+        margin-right: auto;
+    }
+    .copyright h1 {
+        text-align: center;
+        margin: auto;
+    }
     .youtube,
     .instagram,
     .twitter,
     .discord,
     .github {
-        margin-left: 12px;
-        margin-right: 12px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/* SHRINK DROPDOWN MENU TEXT FOR SHORT SCREENS (SUB 450PX HEIGHT) */
+@media screen and (max-height: 450px) {
+    .sidenav_container {
+        overflow-y: auto;
+    }
+    .sidenav_container a {
+        font-size: 20px
     }
 }
 
 
-/* 
- * ON SYSTEMS WITHOUT DARK MODE SUPPORT (E.G. PRE-iOS 13), NO THEMING WILL OCCUR
- * BECAUSE IT WILL NOT DEFAULT TO LIGHT THEME. THE WORKAROUND IS TO REMOVE THE
- * @MEDIA (PREFERS-COLOR-SCHEME) RULE SO IT DEFAULTS TO ONE OF THE THEMES.
- * HERE, WE DEFAULT TO DARK THEME BUT IF A DEVICE THAT SUPPORTS (PREFERS-COLOR-SCHEME)
- * IS USING LIGHT THEME, THE LIGHT THEME CSS WILL OVERRIDE THE DEFAULT BECAUSE
- * IT IS DECLARED LATER IN THE FILE. HTML PRIORITIZES CSS IN ORDER OF NEWEST TO OLDEST.
- */
+/* THEMES AND COLORING */
+
+
 .sidenav_container {
     background-color: rgb(36, 36, 36);
 }
 .sidenav_links a {
-    color: rgb(199, 199, 199);
     color: rgb(219, 219, 219, 0.5);
 }
 .sidenav_links .current {
@@ -375,8 +405,6 @@ main {
 .bar1,
 .bar2,
 .bar3 {
-    background-color: #f0d5b6;
-    background-color: rgb(204, 204, 204);
     background-color: rgb(240, 240, 240);
 }
 
@@ -385,11 +413,9 @@ main {
     background-color: rgb(26, 26, 26);
 }
 .right_header a {
-    color: rgb(179, 179, 179);
     color: rgb(219, 219, 219, 0.5);
 }
 .nav_bar .current {
-    color: #f0d5b6;
     color: rgb(219, 219, 219);
 }
 .right_header a:hover {
@@ -403,65 +429,21 @@ main {
 }
 
 
-.footer {
-    background-color: rgb(34, 34, 34);
-}
-.footer .logo_wrapper h1 {
-    color: rgb(98, 98, 98);
-}
-.footer .logo_wrapper figure {
-    filter: brightness(0.6);
-}
-
-
 .youtube {
-    background-image: url("images/footer/youtube_dark.png");
+    background-image: url("images/footer/youtube_light.png");
 }
 .instagram {
-    background-image: url("images/footer/instagram_dark.png");
+    background-image: url("images/footer/instagram_light.png");
 }
 .twitter {
-    background-image: url("images/footer/twitter_dark.png");
+    background-image: url("images/footer/twitter_light.png");
 }
 .discord {
-    background-image: url("images/footer/discord_dark.png");
+    background-image: url("images/footer/discord_light.png");
 }
 .github {
-    background-image: url("images/footer/github_dark.png");
+    background-image: url("images/footer/github_light.png");
 }
-
-
 .copyright {
-    color: rgb(98, 98, 98);
-}
-
-
-@media screen and (prefers-color-scheme: light) {
-    .footer {
-        background-color: rgb(240, 240, 240);
-    }
-    .footer .logo_wrapper h1 {
-        color: rgb(185, 185, 185);
-    }
-    .footer .logo_wrapper figure {
-        filter: brightness(0.5);
-    }
-    .youtube {
-        background-image: url("images/footer/youtube_light.png");
-    }
-    .instagram {
-        background-image: url("images/footer/instagram_light.png");
-    }
-    .twitter {
-        background-image: url("images/footer/twitter_light.png");
-    }
-    .discord {
-        background-image: url("images/footer/discord_light.png");
-    }
-    .github {
-        background-image: url("images/footer/github_light.png");
-    }
-    .copyright {
-        color: rgb(185, 185, 185);
-    }
+    color: rgb(185, 185, 185);
 }
