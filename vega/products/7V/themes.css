@@ -1,0 +1,15 @@
+.latest .title_container h2,
+.featured .title_container h2 {
+    color: rgb(51, 51, 51);
+}
+.carousel_card {
+    background: rgb(245, 245, 245);
+}
+.carousel_card .card_title a {
+    color: rgb(51, 51, 51);
+    background-color: rgba(245, 245, 245, 0.9);
+}
+.carousel_card .card_title a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(34, 46, 70, 0.9);
+}

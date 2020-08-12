@@ -6,21 +6,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="keyframes.css">
+        <link rel="stylesheet" href="../../reset.css">
+        <link rel="stylesheet" href="../../keyframes.css">
         <link rel="stylesheet" href="animations.css">
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="static.css">
+        <link rel="stylesheet" href="../../static.css">
         <link rel="stylesheet" href="themes.css">
         <link rel="stylesheet" href="layouts.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-        <script src="static.js"></script>
+        <script src="../../static.js"></script>
         <script src="scripts.js"></script>
 
         <!-- FLICKITY FOR CAROUSEL -->
-        <link rel="stylesheet" href="deps/flickity/flickity.css" media="screen">
-        <script src="deps/flickity/flickity.pkgd.min.js"></script>
+        <link rel="stylesheet" href="../../deps/flickity/flickity.css" media="screen">
+        <script src="../../deps/flickity/flickity.pkgd.min.js"></script>
 
         <!-- FAVICONS -->
         <link rel="shortcut icon" href="../images/favicons/favicon.ico">
@@ -55,13 +55,12 @@
             <div class="sidenav_bg" id="sidenav_bg" onclick="open_nav()"></div>
 
             <nav class="sidenav_container" id="sidenav_container_id" style="width: 0vw;">
-                <ul class="sidenav_links">
-                    <li><a href="https://www.infinitylabs.dev/" class="current">Home</a></li>
-                    <li><a href="https://www.infinitylabs.dev/">Keyboards</a></li>
-                    <li><a href="https://www.infinitylabs.dev/">Switches</a></li>
-                    <li><a href="https://www.infinitylabs.dev/">Keycaps</a></li>
-                    <li><a href="https://www.infinitylabs.dev/">Accessories</a></li>
-                </ul>
+                <li><a href="https://www.infinitylabs.dev/">Home</a></li>
+                <li><a href="https://www.infinitylabs.dev/">Keyboards</a></li>
+                <li><a href="https://www.infinitylabs.dev/">Switches</a></li>
+                <li><a href="https://www.infinitylabs.dev/">Keycaps</a></li>
+                <li><a href="https://www.infinitylabs.dev/">Accessories</a></li>
+            </ul>
             </nav>
         </header>
 
@@ -77,14 +76,14 @@
 
                 <nav class="right_header">
                     <ul class="header_links_container">
-                        <li><a href="https://www.infinitylabs.dev/" class="current">Home</a></li>
+                        <li><a href="https://www.infinitylabs.dev/">Home</a></li>
                         <li><a href="https://www.infinitylabs.dev/">Keyboards</a></li>
                         <li><a href="https://www.infinitylabs.dev/">Switches</a></li>
                         <li><a href="https://www.infinitylabs.dev/">Keycaps</a></li>
                         <li><a href="https://www.infinitylabs.dev/">Accessories</a></li>
                     </ul>
                 </nav>
-                <img class="search_btn" src="images/search.png">
+                <img class="search_btn" src="../../images/search.png">
 
                 <div class="hamburger" id="hamburger" onclick="open_nav()">
                     <div class="bar1"></div>
@@ -94,19 +93,93 @@
         </header>
 
         <main style="opacity: 1">
-            <section class="landing">
-                <div class="landing_container">
-                    <div class="landing_text_container">
-                        <h1>THE SEARCH FOR<br> THE PERFECT KEYBOARD</h1>
-                        <p>
-                            Explore the countless different keyboard layouts, switches, keycaps
-                            and more. From aluminum cases to frosted polycarbonate for a beautiful LED glow,
-                            there exists a keyboard perfectly suited to your personal preferences and workflow.
-                        </p>
-                        <a href="keyboards/index.html">Shop</a>
+            <section class="product">
+                <div class="product_container">
+                    <div class="product_images">
+                        <img src="https://i.imgur.com/stEoAJf.png" alt="Keyboard">
+                        <!-- <img src="https://i.imgur.com/VYqE1qA.png" alt="Keyboard"> -->
+                        <img src="https://i.imgur.com/tZFNwaR.jpg" alt="Keyboard">
+                        <img src="https://i.imgur.com/p04esSV.jpg" alt="Keyboard">
+                        <!-- <img src="https://i.imgur.com/n2Y9oOV.jpg" alt="Black rear view"> -->
+                        <img src="https://i.imgur.com/4EshJ33.jpg" alt="Black 7V logo">
+                        <img src="https://i.imgur.com/VEX2rEH.jpg" alt="GMK Olive">
+                        <!-- <img src="https://i.imgur.com/JSM880a.jpg" alt="Navy top view">
+                        <img src="https://i.imgur.com/cqRE0mJ.jpg" alt="Navy top-right view">
+                        <img src="https://i.imgur.com/sflsaqe.jpg" alt="Stainless steel weight">
+                        <img src="https://i.imgur.com/5ob6lhp.jpg" alt="Black top view">
+                        <img src="https://i.imgur.com/pM7K8kR.jpg" alt="Black rear view"> -->
+                        <img src="https://i.imgur.com/eO0tx4h.jpg" alt="E-white top view">
+                        <!-- <img src="https://i.imgur.com/nI1wEyp.jpg" alt="E-white 7V">
+                        <img src="https://i.imgur.com/NBv5Zew.png" alt="E-white 7V top view">
+                        <img src="https://i.imgur.com/Oh8NGcJ.png" alt="GMK Bento">
+                        <img src="https://i.imgur.com/qPfQFvu.png" alt="GMK Dots">
+                        <img src="https://i.imgur.com/7GV0Pmr.png" alt="GMK Olivia dark"> -->
+                    </div>
+
+                    <div class="product_info">
+                        <div class="product_info_stick">
+                            <h3 class="product_name">7V – designed by gok</h3>
+                            <p class="price">$450.00</p>
+                            <p class="description">
+                                The 7V is a 75% layout mechanical keyboard featuring a leaf-spring mounting system.
+                                The PCB is sandwiched on its leaves by the bottom case and poron foam on the top case – this provides
+                                a softer and consistent typing experience, as well as enhanced acoustics by dampening
+                                the vibrations. The case is made from aluminum with anodization or electrophoresis finish and
+                                a polished clear or black PVD coated stainless steel weight for a rear and bottom accent.
+                                <br>
+                                <br>
+                                This is a demo store. For more information, please visit the
+                                <a href="https://geekhack.org/index.php?topic=100896.0">Interest Check thread on Geekhack.</a>
+                            </p>
+
+                            <div class="form_container">
+                                <label class="form_label">Color</label>
+
+                                <div class="form_select_container">
+                                    <select class="form_select" name="" tabindex="0" data-product-option="option1">
+                                        <option value="black" selected="">Black</option>
+                                        <option value="white">E-White</option>
+                                        <option value="gray">Gray</option>
+                                        <option value="navy">Navy</option>
+                                    </select>
+
+                                    <span class="chevron_container">
+                                        <svg class="chevron " aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <path fill="currentColor" fill-rule="evenodd" d="M8.646 18.646a.5.5 0 0 0 .708.708l7-7a.5.5 0 0 0 0-.708l-7-7a.5.5 0 1 0-.708.708L15.293 12l-6.647 6.646z"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="form_container">
+                                <label class="form_label">Plate material</label>
+
+                                <div class="form_select_container">
+                                    <select class="form_select" name="" tabindex="0" data-product-option="option1">
+                                        <option value="black" selected="">Aluminum</option>
+                                        <option value="white">Brass</option>
+                                        <option value="gray">Polycarbonate</option>
+                                        <option value="navy">FR4</option>
+                                    </select>
+
+                                    <span class="chevron_container">
+                                        <svg class="chevron " aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <path fill="currentColor" fill-rule="evenodd" d="M8.646 18.646a.5.5 0 0 0 .708.708l7-7a.5.5 0 0 0 0-.708l-7-7a.5.5 0 1 0-.708.708L15.293 12l-6.647 6.646z"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <button class="add_cart_button">
+                                Add to cart
+                            </button>
+
+                        </div>
                     </div>
                 </div>
             </section>
+
+            <div class="separator"></div>
 
             <section class="featured">
                 <div class="featured_container">
@@ -119,188 +192,68 @@
 
                         <div class="carousel_card">
                             <a class="card_image" href="keyboards/index.html">
-                                <img src="images/car_3.jpg" alt="Keyboard">
+                                <img src="https://i.imgur.com/Oh8NGcJ.png" alt="Keyboard">
                             </a>
                             <div class="card_title">
-                                <a href="keyboards/index.html">Keycult No. 1</a>
+                                <a href="keyboards/index.html">GMK Bento</a>
                             </div>
                         </div>
                         <div class="carousel_card">
                             <a class="card_image" href="keyboards/index.html">
-                                <img src="images/car_1.jpg" alt="Keyboard">
+                                <img src="https://i.imgur.com/qPfQFvu.png" alt="Keyboard">
                             </a>
                             <div class="card_title">
-                                <a href="keyboards/index.html">Keycult No. 1</a>
+                                <a href="keyboards/index.html">GMK Dots</a>
                             </div>
                         </div>
                         <div class="carousel_card">
                             <a class="card_image" href="keyboards/index.html">
-                                <img src="images/car_2.jpg" alt="Keyboard">
+                                <img src="https://i.imgur.com/L8o01tl.png" alt="Keyboard">
                             </a>
                             <div class="card_title">
-                                <a href="keyboards/index.html">Keycult No. 1</a>
+                                <a href="keyboards/index.html">GMK Mizu</a>
                             </div>
                         </div>
                         <div class="carousel_card">
                             <a class="card_image" href="keyboards/index.html">
-                                <img src="images/car_4.jpg" alt="Keyboard">
+                                <img src="https://i.imgur.com/1Oo2ALb.png" alt="Keyboard">
                             </a>
                             <div class="card_title">
-                                <a href="keyboards/index.html">Keycult No. 1/65</a>
+                                <a href="keyboards/index.html">IMSTO Black</a>
                             </div>
                         </div>
                         <div class="carousel_card">
                             <a class="card_image" href="keyboards/index.html">
-                                <img src="images/car_5.jpg" alt="Keyboard">
+                                <img src="https://i.imgur.com/1MSGtmC.png" alt="Keyboard">
                             </a>
                             <div class="card_title">
-                                <a href="keyboards/index.html">Keycult No. 1/65</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="browse">
-                <div class="featured_container">
-                    <div class="gallery js-flickity" 
-                    data-flickity-options='{ "wrapAround": true, "pageDots": false }'>
-
-                        <div class="carousel_card">
-                            <a class="card_image" href="keyboards/index.html">
-                                <img src="images/car_3.jpg" alt="Keyboard">
-                            </a>
-                            <div class="card_title">
-                                <a href="keyboards/index.html">Keyboards</a>
+                                <a href="keyboards/index.html">GMK Oblivion</a>
                             </div>
                         </div>
                         <div class="carousel_card">
                             <a class="card_image" href="keyboards/index.html">
-                                <img src="images/car_8.jpg" alt="Keyboard">
+                                <img src="https://i.imgur.com/QGzbvwS.png" alt="Keyboard">
                             </a>
                             <div class="card_title">
-                                <a href="keyboards/index.html">Keycaps</a>
+                                <a href="keyboards/index.html">GMK Peaches and Cream</a>
                             </div>
                         </div>
                         <div class="carousel_card">
                             <a class="card_image" href="keyboards/index.html">
-                                <img src="images/car_7.jpg" alt="Keyboard">
+                                <img src="https://i.imgur.com/0xVZdZE.png" alt="Keyboard">
                             </a>
                             <div class="card_title">
-                                <a href="keyboards/index.html">Switches</a>
+                                <a href="keyboards/index.html">GMK Café</a>
                             </div>
                         </div>
                         <div class="carousel_card">
                             <a class="card_image" href="keyboards/index.html">
-                                <img src="images/car_10.jpg" alt="Keyboard">
+                                <img src="https://i.imgur.com/7GV0Pmr.png" alt="Keyboard">
                             </a>
                             <div class="card_title">
-                                <a href="keyboards/index.html">Stabilizers</a>
+                                <a href="keyboards/index.html">GMK Olivia</a>
                             </div>
                         </div>
-                        <div class="carousel_card">
-                            <a class="card_image" href="keyboards/index.html">
-                                <img src="images/car_9.jpg" alt="Keyboard">
-                            </a>
-                            <div class="card_title">
-                                <a href="keyboards/index.html">Accessories</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="latest">
-                <div class="latest_container">
-                    <div class="title_container">
-                        <h2>Latest Products</h2>
-                    </div>
-
-                    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "pageDots": false }'>
-                        <div class="carousel_card">
-                            <a class="card_image" href="keyboards/index.html">
-                                <img src="images/car_2.jpg" alt="Keyboard">
-                            </a>
-                            <div class="card_title">
-                                <a href="keyboards/index.html">Keycult No. 1</a>
-                            </div>
-                        </div>
-                        <div class="carousel_card">
-                            <a class="card_image" href="keyboards/index.html">
-                                <img src="images/car_5.jpg" alt="Keyboard">
-                            </a>
-                            <div class="card_title">
-                                <a href="keyboards/index.html">Keycult No. 1/65</a>
-                            </div>
-                        </div>
-                        <div class="carousel_card">
-                            <a class="card_image" href="keyboards/index.html">
-                                <img src="images/car_3.jpg" alt="Keyboard">
-                            </a>
-                            <div class="card_title">
-                                <a href="keyboards/index.html">Keycult No. 1</a>
-                            </div>
-                        </div>
-                        <div class="carousel_card">
-                            <a class="card_image" href="keyboards/index.html">
-                                <img src="images/car_1.jpg" alt="Keyboard">
-                            </a>
-                            <div class="card_title">
-                                <a href="keyboards/index.html">Keycult No. 1</a>
-                            </div>
-                        </div>
-                        <div class="carousel_card">
-                            <a class="card_image" href="keyboards/index.html">
-                                <img src="images/car_4.jpg" alt="Keyboard">
-                            </a>
-                            <div class="card_title">
-                                <a href="keyboards/index.html">Keycult No. 1/65</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="luxury">
-                <div class="luxury_container">
-                    <div class="title_container">
-                        <h1>High End Luxury Keyboards</h1>
-                        <p>
-                            Made from anodized aluminum with a sandblasted brass mid-layer, complete with
-                            gasket mounting for maximum acoustics and typing feel.
-                        </p>
-                        <a href="keyboards/index.html">Shop</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="follow">
-                <div class="gallery_container">
-                    <div class="title_container">
-                        <h2>Follow us on Instagram</h2>
-                    </div>
-
-                    <div class="gallery_feed">
-                        <a class="card_image" href="https://infinitylabs.dev/projects/vega/">
-                            <img src="images/car_1.jpg" alt="Keyboard">
-                        </a>
-                        <a class="card_image" href="https://infinitylabs.dev/projects/vega/">
-                            <img src="images/car_2.jpg" alt="Keyboard">
-                        </a>
-                        <a class="card_image" href="https://infinitylabs.dev/projects/vega/">
-                            <img src="images/car_3.jpg" alt="Keyboard">
-                        </a>
-                        <a class="card_image" href="https://infinitylabs.dev/projects/vega/">
-                            <img src="images/car_4.jpg" alt="Keyboard">
-                        </a>
-                        <a class="card_image" href="https://infinitylabs.dev/projects/vega/">
-                            <img src="images/car_5.jpg" alt="Keyboard">
-                        </a>
-                        <a class="card_image" href="https://infinitylabs.dev/projects/vega/">
-                            <img src="images/car_7.jpg" alt="Keyboard">
-                        </a>
 
                     </div>
                 </div>
