@@ -1,0 +1,176 @@
+@media only screen and (max-width: 1280px) {
+    .product_container .product_images {
+        width: 59%;
+        padding-right: 15px;
+    }
+    .product_container .product_info {
+        width: 41%;
+        padding-left: 15px;
+    }
+    .product_container .product_info_stick {
+        line-height: 1.5em;
+    }
+
+
+    .product_container .product_info h3 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    .product_container .product_info .price {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .product_container .product_info .description {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    .product_container .product_info .description a {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+
+    .form_container {
+        margin-bottom: 25px;
+    }
+    .form_label {
+        font-size: 15px;
+    }
+    .form_select {
+        padding: 12px 18px;
+        font-size: 15px;
+    }
+    .add_cart_button {
+        padding: 14px 18px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .product_container .product_images {
+        width: 57%;
+    }
+    .product_container .product_info {
+        width: 43%;
+    }
+    .product_container .product_info_stick {
+        padding: 50px 0;
+    }
+
+
+    .product_container .product_info .price {
+        font-size: 14px;
+    }
+    .product_container .product_info .description {
+        font-size: 14px;
+    }
+    .product_container .product_info .description a {
+        font-size: 14px;
+    }
+
+
+    .form_container {
+        margin-bottom: 25px;
+    }
+    .form_label {
+        font-size: 14px;
+    }
+    .form_select,
+    .add_cart_button {
+        font-size: 14px;
+    }
+
+
+    .featured .title_container h2 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    section {
+        margin: 60px auto;
+    }
+    .product {
+        padding: 0 15px;
+    }
+    .product_container .product_images {
+        width: 53%;
+        padding-right: 10px;
+    }
+    .product_container .product_info {
+        width: 47%;
+        padding-left: 10px;
+    }
+    .product_container .product_info_stick {
+        padding: 40px 0;
+    }
+
+
+    .separator {
+        margin: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .product_container {
+        flex-direction: column-reverse;
+    }
+    .product_container .product_images,
+    .product_container .product_info {
+        width: 100%;
+        max-width: 550px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .product_container .product_info_stick {
+        padding: 0 0 80px 0;
+    }
+
+
+    .product_container .product_info h3 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+    .product_container .product_info .price {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .product_container .product_info .description {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .product_container .product_info .description a {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+
+    .form_label {
+        font-size: 14px;
+    }
+    .form_select {
+        font-size: 14px;
+    }
+    .add_cart_button {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .forms_container {
+        flex-direction: column;
+    }
+    .form_container {
+        width: 100%;
+    }
+
+
+    .carousel_card {
+        width: 100%;
+    }
+
+
+    .featured .title_container h2 {
+        font-size: 24px;
+    }
+}

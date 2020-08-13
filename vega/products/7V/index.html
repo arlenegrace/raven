@@ -7,8 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="../../reset.css">
-        <link rel="stylesheet" href="../../keyframes.css">
-        <link rel="stylesheet" href="animations.css">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="../../static.css">
         <link rel="stylesheet" href="themes.css">
@@ -40,14 +38,14 @@
         <meta name="author" content="Infinity Labs">
 
         <meta property="og:site_name" content="Infinity Labs">
-        <meta property="og:title" content="Vega — Infinity Labs">
+        <meta property="og:title" content="7V — Vega">
         <meta property="og:url" content="https://www.infinitylabs.dev/vega/">
-        <meta property="og:image" content="https://www.infinitylabs.dev/images/portfolio_quickarray.jpg"/>
-        <meta property="og:image:width" content="1160"/>
-        <meta property="og:image:height" content="660"/>
+        <meta property="og:image" content="https://i.imgur.com/4EshJ33.jpg"/>
+        <meta property="og:image:width" content="1800"/>
+        <meta property="og:image:height" content="1200"/>
         <meta name="twitter:card" content="summary_large_image"/>
 
-        <title>Vega — Infinity Labs</title>
+        <title>7V — Infinity Labs</title>
     </head>
 
     <body>
@@ -55,12 +53,13 @@
             <div class="sidenav_bg" id="sidenav_bg" onclick="open_nav()"></div>
 
             <nav class="sidenav_container" id="sidenav_container_id" style="width: 0vw;">
-                <li><a href="https://www.infinitylabs.dev/">Home</a></li>
-                <li><a href="https://www.infinitylabs.dev/">Keyboards</a></li>
-                <li><a href="https://www.infinitylabs.dev/">Switches</a></li>
-                <li><a href="https://www.infinitylabs.dev/">Keycaps</a></li>
-                <li><a href="https://www.infinitylabs.dev/">Accessories</a></li>
-            </ul>
+                <ul class="sidenav_links">
+                    <li><a href="https://www.infinitylabs.dev/">Home</a></li>
+                    <li><a href="https://www.infinitylabs.dev/">Keyboards</a></li>
+                    <li><a href="https://www.infinitylabs.dev/">Switches</a></li>
+                    <li><a href="https://www.infinitylabs.dev/">Keycaps</a></li>
+                    <li><a href="https://www.infinitylabs.dev/">Accessories</a></li>
+                </ul>
             </nav>
         </header>
 
@@ -99,7 +98,7 @@
                         <img src="https://i.imgur.com/stEoAJf.png" alt="Keyboard">
                         <!-- <img src="https://i.imgur.com/VYqE1qA.png" alt="Keyboard"> -->
                         <img src="https://i.imgur.com/tZFNwaR.jpg" alt="Keyboard">
-                        <img src="https://i.imgur.com/p04esSV.jpg" alt="Keyboard">
+                        <!-- <img src="https://i.imgur.com/p04esSV.jpg" alt="Keyboard"> -->
                         <!-- <img src="https://i.imgur.com/n2Y9oOV.jpg" alt="Black rear view"> -->
                         <img src="https://i.imgur.com/4EshJ33.jpg" alt="Black 7V logo">
                         <img src="https://i.imgur.com/VEX2rEH.jpg" alt="GMK Olive">
@@ -121,53 +120,56 @@
                             <h3 class="product_name">7V – designed by gok</h3>
                             <p class="price">$450.00</p>
                             <p class="description">
-                                The 7V is a 75% layout mechanical keyboard featuring a leaf-spring mounting system.
-                                The PCB is sandwiched on its leaves by the bottom case and poron foam on the top case – this provides
-                                a softer and consistent typing experience, as well as enhanced acoustics by dampening
-                                the vibrations. The case is made from aluminum with anodization or electrophoresis finish and
-                                a polished clear or black PVD coated stainless steel weight for a rear and bottom accent.
+                                The 7V is a 75% layout mechanical keyboard featuring a leaf-spring mounting system,
+                                providing a softer and more consistent typing experience, as well as enhanced acoustics by dampening
+                                the vibrations. The case is made from aluminum with a polished stainless steel weight for a rear and
+                                bottom accent.
                                 <br>
                                 <br>
                                 This is a demo store. For more information, please visit the
                                 <a href="https://geekhack.org/index.php?topic=100896.0">Interest Check thread on Geekhack.</a>
                             </p>
 
-                            <div class="form_container">
-                                <label class="form_label">Color</label>
+                            <div class="forms_container">
 
-                                <div class="form_select_container">
-                                    <select class="form_select" name="" tabindex="0" data-product-option="option1">
-                                        <option value="black" selected="">Black</option>
-                                        <option value="white">E-White</option>
-                                        <option value="gray">Gray</option>
-                                        <option value="navy">Navy</option>
-                                    </select>
-
-                                    <span class="chevron_container">
-                                        <svg class="chevron " aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path fill="currentColor" fill-rule="evenodd" d="M8.646 18.646a.5.5 0 0 0 .708.708l7-7a.5.5 0 0 0 0-.708l-7-7a.5.5 0 1 0-.708.708L15.293 12l-6.647 6.646z"></path>
-                                        </svg>
-                                    </span>
+                                <div class="form_container">
+                                    <label class="form_label">Color</label>
+    
+                                    <div class="form_select_container">
+                                        <select class="form_select" name="" tabindex="0" data-product-option="option1">
+                                            <option value="black" selected="">Black</option>
+                                            <option value="white">E-White</option>
+                                            <option value="gray">Gray</option>
+                                            <option value="navy">Navy</option>
+                                        </select>
+    
+                                        <span class="chevron_container">
+                                            <svg class="chevron " aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                <path fill="currentColor" fill-rule="evenodd" d="M8.646 18.646a.5.5 0 0 0 .708.708l7-7a.5.5 0 0 0 0-.708l-7-7a.5.5 0 1 0-.708.708L15.293 12l-6.647 6.646z"></path>
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="form_container">
-                                <label class="form_label">Plate material</label>
-
-                                <div class="form_select_container">
-                                    <select class="form_select" name="" tabindex="0" data-product-option="option1">
-                                        <option value="black" selected="">Aluminum</option>
-                                        <option value="white">Brass</option>
-                                        <option value="gray">Polycarbonate</option>
-                                        <option value="navy">FR4</option>
-                                    </select>
-
-                                    <span class="chevron_container">
-                                        <svg class="chevron " aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path fill="currentColor" fill-rule="evenodd" d="M8.646 18.646a.5.5 0 0 0 .708.708l7-7a.5.5 0 0 0 0-.708l-7-7a.5.5 0 1 0-.708.708L15.293 12l-6.647 6.646z"></path>
-                                        </svg>
-                                    </span>
+    
+                                <div class="form_container">
+                                    <label class="form_label">Plate material</label>
+    
+                                    <div class="form_select_container">
+                                        <select class="form_select" name="" tabindex="0" data-product-option="option1">
+                                            <option value="black" selected="">Aluminum</option>
+                                            <option value="white">Brass</option>
+                                            <option value="gray">Polycarbonate</option>
+                                            <option value="navy">FR4</option>
+                                        </select>
+    
+                                        <span class="chevron_container">
+                                            <svg class="chevron " aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                <path fill="currentColor" fill-rule="evenodd" d="M8.646 18.646a.5.5 0 0 0 .708.708l7-7a.5.5 0 0 0 0-.708l-7-7a.5.5 0 1 0-.708.708L15.293 12l-6.647 6.646z"></path>
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </div>
+
                             </div>
 
                             <button class="add_cart_button">
@@ -179,7 +181,9 @@
                 </div>
             </section>
 
-            <div class="separator"></div>
+            <div class="separator">
+                <div class="inner_separator"></div>
+            </div>
 
             <section class="featured">
                 <div class="featured_container">
