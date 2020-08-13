@@ -192,7 +192,7 @@ footer {
     outline: none;
     font-size: 16px;
     margin: 0;
-    padding: 8px 12px;
+    padding: 12px 12px;
     color: #ffffff;
     background-color: rgb(151, 151, 151);
 }
@@ -200,14 +200,14 @@ footer {
     color: rgb(199, 199, 199);
 }
 .login_form .login_button {
-    font-size: 20px;
+    font-size: 16px;
     border: none;
     cursor: pointer;
     outline: none;
     color: #ffffff;
     background-color: rgb(36, 36, 36);
     transition: background-color 0.3s;
-    padding: 8px 12px;
+    padding: 12px 12px;
     margin: 0px;
 }
 .login_form .login_button:hover {
