@@ -138,10 +138,6 @@ main {
 }
 
 
-footer {
-    padding: 70px 30px;
-    background-color: rgb(241, 241, 241);
-}
 .footer_container {
     max-width: 1350px;
     margin: 0 auto;
@@ -149,19 +145,25 @@ footer {
 .footer_links_container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer_links_container .list {
     width: 19%;
+    padding-right: 15px;
+}
+.footer_links_container .list:last-child {
+    padding-right: 0px;
 }
 .footer_container .subscribe {
     margin-left: auto;
+    min-width: 280px;
 }
 .footer_links_container .list h5 {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.06em;
+    line-height: 1.5em;
     margin-bottom: 20px;
-    color: rgb(80, 80, 80);
 }
 .footer_links_container .list a {
     display: block;
@@ -169,18 +171,15 @@ footer {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.06em;
+    line-height: 1.5em;
     text-decoration: none;
     cursor: pointer;
     margin-bottom: 10px;
-    color: rgb(100, 100, 100);
     transition: color 0.3s;
-}
-.footer_links_container .list a:hover {
-    color: rgb(58, 58, 58);
 }
 
 .login_form {
-    width: 250px;
+    width: 100%;
     display: flex;
     border-radius: 8px;
     overflow: hidden;
@@ -193,36 +192,27 @@ footer {
     font-size: 16px;
     margin: 0;
     padding: 12px 12px;
-    color: #ffffff;
-    background-color: rgb(151, 151, 151);
-}
-.login_form .token_input::placeholder {
-    color: rgb(199, 199, 199);
 }
 .login_form .login_button {
     font-size: 16px;
     border: none;
     cursor: pointer;
     outline: none;
-    color: #ffffff;
-    background-color: rgb(36, 36, 36);
     transition: background-color 0.3s;
     padding: 12px 12px;
     margin: 0px;
 }
-.login_form .login_button:hover {
-    background-color: rgb(58, 58, 58);
-}
 .social_container {
     width: auto;
+    max-width: 150px;
     display: flex;
+    justify-content: space-between;
 }
 .youtube,
 .instagram,
 .twitter,
 .discord,
 .github {
-    margin-right: 14px;
     width: 25px;
     height: 25px;
     background-size: cover;
@@ -256,34 +246,46 @@ footer {
     width: 100%;
     height: 2px;
     margin: 30px 0;
-    background-color: rgb(224, 224, 224);
 }
 .footer_container .copyright p {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.06em;
-    color: rgb(80, 80, 80);
+    line-height: 1.5em;
 }
 
 
-/* LAYOUTS CSS */
+/* 
+ * ===============================
+ *         LAYOUTS CSS
+ * ===============================
+ */
 
 @media screen and (max-width: 1300px) {
     .nav_bar {
         padding: 25px 30px;
     }
-    .footer {
-        padding: 20px 30px;
-    }
 }
 
-/* 
- * CURRENTLY NOT WORKING. HIDE DROPDOWN MENU WHEN ENLARGING WINDOW WHILE
- * DROPDOWN MENU IS ACTIVE.
- */
-@media screen and (min-width: 940px) {
-    .sidenav_container {
-        height: 0%;
+@media screen and (max-width: 1024px) {
+    .footer_links_container .list {
+        width: 22%;
+    }
+    .footer_container .subscribe {
+        min-width: 250px;
+    }
+    .footer_links_container .list h5 {
+        font-size: 15px;
+    }
+    .footer_links_container .list a {
+        font-size: 13px;
+    }
+    .login_form .token_input,
+    .login_form .login_button {
+        font-size: 14px;
+    }
+    .footer_container .copyright p {
+        font-size: 13px;
     }
 }
 
@@ -332,21 +334,39 @@ footer {
         display: none;
     }
 
-    .footer {
+    footer{
         width: auto;
-        padding: 20px 15px;
+        padding: 70px 15px;
+    }
+    .footer_links_container .list {
+        width: 50%;
+        min-width: 50%;
+        margin-bottom: 35px;
+    }
+    .footer_links_container .list h5 {
+        margin-bottom: 10px;
+    }
+    .footer_links_container .list a {
+        margin-bottom: 5px;
+    }
+    .login_form .token_input,
+    .login_form .login_button {
+        font-size: 14px;
+    }
+    .footer_container .copyright p {
+        font-size: 13px;
+    }
+    .footer_container .separator {
+        margin: 20px 0;
     }
 }
 
 /* COMPRESS FOOTER INTO VERTICAL STACK */
 @media screen and (max-width: 750px) {
-    .footer {
-        padding: 10px 30px;
-    }
-    .footer .footer_container {
+    footer .footer_container {
         display: block;
     }
-    .footer .logo_wrapper,
+    footer .logo_wrapper,
     .social,
     .copyright {
         width: auto;
@@ -355,23 +375,29 @@ footer {
     .social {
         padding: 15px 0px;
     }
-    .footer .logo_wrapper figure {
+    footer .logo_wrapper figure {
         margin-left: auto;
     }
-    .footer .logo_wrapper h1 {
+    footer .logo_wrapper h1 {
         margin-right: auto;
     }
     .copyright h1 {
         text-align: center;
         margin: auto;
     }
-    .youtube,
-    .instagram,
-    .twitter,
-    .discord,
-    .github {
-        margin-left: 15px;
-        margin-right: 15px;
+}
+
+@media screen and (max-width: 450px) {
+    .footer_links_container .list {
+        width: 50%;
+        min-width: 50%;
+        margin-bottom: 35px;
+    }
+    .footer_links_container .list:last-child {
+        margin-bottom: 0;
+    }
+    .footer_container .subscribe {
+        width: 100%;
     }
 }
 
@@ -386,8 +412,11 @@ footer {
 }
 
 
-/* THEMES AND COLORING */
-
+/* 
+ * ===============================
+ *             THEMES
+ * ===============================
+ */
 
 .sidenav_container {
     background-color: rgb(36, 36, 36);
@@ -429,6 +458,32 @@ footer {
 }
 
 
+footer {
+    background-color: rgb(241, 241, 241);
+}
+.footer_links_container .list h5 {
+    color: rgb(59, 59, 59);
+}
+.footer_links_container .list a {
+    color: rgb(100, 100, 100);
+}
+.footer_links_container .list a:hover {
+    color: rgb(58, 58, 58);
+}
+.login_form .token_input {
+    color: #ffffff;
+    background-color: rgb(151, 151, 151);
+}
+.login_form .token_input::placeholder {
+    color: rgb(199, 199, 199);
+}
+.login_form .login_button {
+    color: #ffffff;
+    background-color: rgb(36, 36, 36);
+}
+.login_form .login_button:hover {
+    background-color: rgb(58, 58, 58);
+}
 .youtube {
     background-image: url("images/footer/youtube_light.png");
 }
@@ -446,4 +501,10 @@ footer {
 }
 .copyright {
     color: rgb(185, 185, 185);
+}
+.footer_container .separator {
+    background-color: rgb(224, 224, 224);
+}
+.footer_container .copyright p {
+    color: rgb(80, 80, 80);
 }
