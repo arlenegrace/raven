@@ -1,3 +1,36 @@
+.product_container .product_info h3 {
+    color: rgb(61, 61, 61);
+}
+.product_container .product_info .price {
+    color: rgb(61, 61, 61);
+}
+.product_container .product_info .description {
+    color: rgb(110, 110, 110);
+}
+.product_container .product_info .description a {
+    color: rgb(77, 120, 185);
+}
+
+.form_label {
+    color: rgb(112, 112, 112);
+}
+.form_select,
+.add_cart_button {
+    color: rgb(151, 151, 151);
+    background-color: #f5f5f5;
+}
+.add_cart_button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 32, 32);
+}
+.add_cart_button:hover {
+    background-color: rgb(42, 42, 42);
+}
+.form_select_container .chevron_container {
+    color: rgb(112, 112, 112);
+}
+
+
 .latest .title_container h2,
 .featured .title_container h2 {
     color: rgb(51, 51, 51);
@@ -12,4 +45,9 @@
 .carousel_card .card_title a:hover {
     color: rgb(255, 255, 255);
     background-color: rgba(34, 46, 70, 0.9);
+}
+
+
+.separator .inner_separator {
+    background-color: rgb(235, 235, 235);
 }
