@@ -424,7 +424,7 @@ footer {
     background-color: rgb(36, 36, 36);
 }
 .sidenav_links a {
-    color: rgb(219, 219, 219, 0.5);
+    color: rgb(149, 149, 149);
 }
 .sidenav_links .current {
     color: rgb(219, 219, 219);
@@ -432,6 +432,7 @@ footer {
 .sidenav_links a:hover,
 .sidenav_container a:focus {
     color: #ffeccf;
+    color: rgb(202, 202, 202);
 }
 .bar1,
 .bar2,
