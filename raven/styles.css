@@ -26,7 +26,7 @@ main section:last-child {
 }
 .landing_container {
     max-width: 1410px;
-    padding: 150px 30px;
+    padding: 150px 0px;
     margin: 0 auto;
 }
 .landing_container .landing_text_container {
@@ -58,15 +58,21 @@ main section:last-child {
     transition: color 0.3s, background-color 0.3s;
 }
 
+
+.browse,
+.featured {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
 .browse_container,
 .featured_container {
     max-width: 1410px;
     margin: 0 auto;
 }
-.browse .title_container,
+/* .browse .title_container,
 .featured .title_container {
     margin-top: 50px;
-}
+} */
 .browse .title_container h2,
 .featured .title_container h2 {
     font-size: 32px;
@@ -134,7 +140,7 @@ main section:last-child {
     font-size: 32px;
     font-weight: 500;
     letter-spacing: 0.06em;
-    line-height: 1.5em;
+    line-height: 1.3em;
     margin-bottom: 15px;
 }
 .luxury_container .title_container p {
@@ -153,6 +159,7 @@ main section:last-child {
     padding: 10px 18px;
     transition: color 0.3s, background-color 0.3s;
 }
+
 
 .product {
     margin: 0;
@@ -189,7 +196,7 @@ main section:last-child {
 .product_container .product_info h3 {
     font-size: 32px;
     font-weight: 600;
-    line-height: 1.2em;
+    line-height: 1.3em;
     margin-bottom: 35px;
 }
 .product_container .product_info .price {
@@ -268,13 +275,10 @@ main section:last-child {
     max-width: 1410px;
     margin: 0 auto;
 }
-.follow .title_container {
-    margin-top: 50px;
-}
 .follow .title_container h2 {
     font-size: 32px;
     font-weight: 500;
-    line-height: 1.5em;
+    line-height: 1.3em;
     margin-bottom: 30px;
     text-align: center;
 }
