@@ -1,9 +1,37 @@
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1280px) {
+    .category_title {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
     main {
         padding: 90px 0;
     }
+
+
+    .filter_container {
+        max-width: 330px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        padding: 80px 0;
+    }
+
     section {
-        padding: 0 20px;
+        padding: 0 15px;
+    }
+
+
+    .filter_container {
+        max-width: 310px;
+    }
+
+
+    .category_title {
+        font-size: 28px;
     }
 }
 
@@ -11,9 +39,16 @@
     main {
         padding: 70px 0;
     }
-    section {
-        padding: 0 15px;
+
+
+    .filter_container {
+        max-width: 280px;
     }
+    .filter_container li {
+        font-size: 14px;
+    }
+
+
     .image_showcase .collage .collage_wrapper {
         grid-template-columns: repeat( auto-fill, 100%);
     }

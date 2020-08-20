@@ -1,36 +1,44 @@
-/* 
- * ON SYSTEMS WITHOUT DARK MODE SUPPORT (E.G. PRE-iOS 13), NO THEMING WILL OCCUR
- * BECAUSE IT WILL NOT DEFAULT TO LIGHT THEME. THE WORKAROUND IS TO REMOVE THE
- * @MEDIA (PREFERS-COLOR-SCHEME) RULE SO IT DEFAULTS TO ONE OF THE THEMES.
- * HERE, WE DEFAULT TO DARK THEME BUT IF A DEVICE THAT SUPPORTS (PREFERS-COLOR-SCHEME)
- * IS USING LIGHT THEME, THE LIGHT THEME CSS WILL OVERRIDE THE DEFAULT BECAUSE
- * IT IS DECLARED LATER IN THE FILE. HTML PRIORITIZES CSS IN ORDER OF NEWEST TO OLDEST.
- */
-
 body {
     background-color: rgb(39, 39, 39);
 }
 
 
-.sidebar {
-    background-color: rgb(44, 44, 44);
-}
-
-
 main {
-    background-color: rgb(245, 245, 245);
     background-color: rgb(255, 255, 255);
 }
 
 
-.fullscreen_container {
-    background-color: rgba(12, 12, 12, 0.9);
+.mobile_toolbar h5 {
+    color: rgb(240, 240, 240);
+}
+.mobile_toolbar .filter_btn {
+    color: rgb(235, 235, 235);
+    background-color: rgb(29, 29, 29);
+    background-color: rgb(58, 58, 58);
 }
 
-.image_showcase .collage .collage_title {
-    color: #ffeccf;
+
+.filter_container li {
+    color: rgb(190, 190, 190);
 }
-.image_showcase .collage .row .image_right,
-.image_showcase .row .bottom .image_left {
-    background-color: rgb(37, 37, 37);
+.filter_container li:hover {
+    color: rgb(121, 121, 121);
+}
+.filter_container .active_filter {
+    color: rgb(100, 100, 100) !important;
+}
+
+
+.carousel_card {
+    background: rgb(245, 245, 245);
+}
+
+
+.carousel_card .card_title a {
+    color: rgb(51, 51, 51);
+    background-color: rgba(245, 245, 245, 0.9);
+}
+.carousel_card .card_title a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(34, 46, 70, 0.9);
 }

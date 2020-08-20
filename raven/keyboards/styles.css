@@ -5,6 +5,25 @@ body {
 }
 
 
+main {
+    padding: 100px 0;
+}
+section {
+    width: auto;
+    max-width: 1410px;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+
+
+.category_title {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
 .mobile_toolbar {
     display: none;
     width: 100%;
@@ -16,16 +35,12 @@ body {
     font-weight: 400;
     letter-spacing: 0.04em;
     padding: 6px 0px;
-    color: rgb(240, 240, 240);
 }
 .mobile_toolbar .filter_btn {
     margin-left: auto;
     margin-right: 0;
     padding: 6px 12px;
     cursor: pointer;
-    color: rgb(235, 235, 235);
-    background-color: rgb(29, 29, 29);
-    background-color: rgb(58, 58, 58);
 }
 .arrow {
     border: solid;
@@ -37,20 +52,9 @@ body {
 }
 
 
-main {
-    padding: 120px 0;
-}
-section {
-    width: auto;
-    max-width: 1410px;
-    margin: 0 auto;
-    padding: 0px 30px;
-}
-
-
 .filter_container {
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 350px;
     margin-bottom: 40px;
 
     display: flex;
@@ -61,11 +65,7 @@ section {
     font-weight: 500;
     letter-spacing: 0.04em;
     cursor: pointer;
-    color: rgb(190, 190, 190);
-}
-.filter_container .active_filter {
-    color: rgb(100, 100, 100);
-
+    transition: color 0.3s;
 }
 
 
@@ -75,47 +75,43 @@ section {
 }
 .image_showcase .collage .collage_wrapper {
     display: grid;
-    gap: 15px;
+    gap: 50px 15px;
     grid-template-columns: repeat( auto-fill, minmax(350px, 1fr));
     width: auto;
 }
-.image_showcase .collage_wrapper .product_card {
+
+.carousel_card {
+    position: relative;
+    line-height: 0;
+}
+.carousel_card img {
     width: 100%;
     height: 100%;
-    padding-bottom: 10px;
-    overflow: hidden;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    background-color: rgb(245, 245, 245);
-}
-.image_showcase img {
-    width: 100%;
     object-fit: cover;
-    cursor: pointer;
-    margin-bottom: 20px;
-    transition: filter 0.3s;
 }
-.image_showcase .product_name {
-    margin: 0 10px;
+.carousel_card h4 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
-.image_showcase h5,
-.image_showcase h6 {
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    color: rgb(61, 61, 61);
-    margin-bottom: 15px;
+.carousel_card .card_title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
-.image_showcase h6 {
-    font-size: 17px;
-}
-.image_showcase .model,
-.image_showcase .brand {
+.carousel_card .card_title a {
     display: inline-block;
-}
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 8px 18px;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
 
-
-.image_showcase .collage_wrapper img:hover {
-    -webkit-filter: brightness(0.8);
-    filter: brightness(0.8);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: .04em;
 }
