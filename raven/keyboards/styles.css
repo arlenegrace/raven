@@ -83,6 +83,7 @@ section {
 .carousel_card {
     position: relative;
     line-height: 0;
+    overflow: hidden;
 }
 .carousel_card img {
     width: 100%;

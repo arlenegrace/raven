@@ -133,6 +133,7 @@ main section:last-child {
     width: 420px;
     height: 280px;
     margin-right: 10px;
+    overflow: hidden;
     counter-increment: gallery-cell;
 }
 .carousel_card img {
